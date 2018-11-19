@@ -5,7 +5,7 @@ navigator.serviceWorker.register('/sw_practice.js').then(ServiceWorkerRegistrati
   console.log('not registered', err);
 });
 
-fetch('http://www.omdbapi.com/?t=dangal&apikey=BanMePlz').then(res => { res.json().then(data => { 
+fetch('https://www.omdbapi.com/?t=dangal&apikey=BanMePlz').then(res => { res.json().then(data => { 
   document.getElementById('data').innerHTML = `
     <h2>${data.Title}</h2>
     <img src="${data.Poster}">
